@@ -1,0 +1,49 @@
+#EXTM3U
+#EXTINF:0,radiosidewinder_a
+#EXTVLCOPT:network-caching=1000
+http://radiosidewinder.out.airtime.pro:8000/radiosidewinder_a
+#EXTINF:0,SLAY Radio
+#EXTVLCOPT:network-caching=1000
+http://relay1.slayradio.org:8100/
+#EXTINF:0,Hutton Orbital
+#EXTVLCOPT:network-caching=1000
+https://hazel.torontocast.com/hutton
+#EXTINF:0,ERT 958
+#EXTVLCOPT:network-caching=1000
+http://radiostreaming.ert.gr/ert-958fm
+#EXTINF:0,ERT Proto
+#EXTVLCOPT:network-caching=1000
+https://radiostreaming.ert.gr/ert-proto
+#EXTINF:0,ERT Deftero
+#EXTVLCOPT:network-caching=1000
+https://radiostreaming.ert.gr/ert-deftero
+#EXTINF:0,ERT Trito
+#EXTVLCOPT:network-caching=1000
+https://radiostreaming.ert.gr/ert-trito
+#EXTINF:0,ERT Kosmos
+#EXTVLCOPT:network-caching=1000
+https://radiostreaming.ert.gr/ert-kosmos
+#EXTINF:0,ERT 102
+#EXTVLCOPT:network-caching=1000
+https://radiostreaming.ert.gr/ert-102fm
+#EXTINF:0,ERT Zeppelin
+#EXTVLCOPT:network-caching=1000
+https://radiostreaming.ert.gr/ert-zeppelin
+#EXTINF:0,ERT Kosmos Jazz
+#EXTVLCOPT:network-caching=1000
+https://radiostreaming.ert.gr/ert-webjazz
+#EXTINF:0,ERT Ta Laika
+#EXTVLCOPT:network-caching=1000
+https://radiostreaming.ert.gr/ert-talaika
+#EXTINF:0,1055 Rock Thessaloniki
+#EXTVLCOPT:network-caching=1000
+http://radio.1055rock.gr:30000/1055
+#EXTINF:0,88miso
+#EXTVLCOPT:network-caching=1000
+http://solid33.streamupsolutions.com:30000/stream
+#EXTINF:0,Nectarine - necta64.mp3
+#EXTVLCOPT:network-caching=1000
+https://scenestream.io/necta64.mp3
+#EXTINF:0,live
+#EXTVLCOPT:network-caching=1000
+http://hyperadio.ru:8000/live
