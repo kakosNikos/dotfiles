@@ -39,3 +39,40 @@ colorscheme dracula
 
 set clipboard=autoselect
 
+set backspace=indent,eol,start
+
+" some weird ass stuff written by chatGPT. Adds the :B command which switch to
+" a buffer in an existing tab.
+
+function! SwitchToBufferInTab(buffer)
+  let bufnum = bufnr(a:buffer)
+  let tabnum = tabpagenr()
+  let winnum = tabpagewinnr(tabnum)
+
+  " Check for existing tab with buffer
+  let found_tabnum = -1
+  for i in range(1, tabpagenr('$'))
+    if i != tabnum
+      let bufwin = tabpagebuflist(i)
+      for j in range(len(bufwin))
+        if bufwin[j] == bufnum
+          let found_tabnum = i
+          break
+        endif
+      endfor
+    endif
+    if found_tabnum != -1
+      break
+    endif
+  endfor
+
+  " Switch to existing tab or open new tab
+  if found_tabnum != -1
+    execute found_tabnum . "tabnext"
+    execute winnum . "wincmd w"
+  else
+    execute "tabnew " . a:buffer
+  endif
+endfunction
+
+command! -nargs=1 -complete=buffer B call SwitchToBufferInTab(<f-args>)
