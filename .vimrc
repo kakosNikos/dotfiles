@@ -38,6 +38,7 @@ syntax enable
 colorscheme dracula
 
 set clipboard=autoselect
+set mouse=v
 
 set backspace=indent,eol,start
 
